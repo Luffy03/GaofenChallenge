@@ -1,0 +1,17 @@
+
+#构建
+sudo docker build -t try . 
+
+# run
+sudo nvidia-docker run try
+
+# login
+sudo docker login --username=akiyamalin registry.cn-hangzhou.aliyuncs.com
+Luffy503
+
+# tag
+sudo docker tag try registry.cn-hangzhou.aliyuncs.com/gaofenchallenge/contest:try
+
+# push
+sudo docker push registry.cn-hangzhou.aliyuncs.com/gaofenchallenge/contest:try
+
